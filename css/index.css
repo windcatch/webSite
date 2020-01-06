@@ -1,4 +1,15 @@
 /* Custom Styles */
+body{
+    font-family: Tahoma,'Microsoft Yahei',Simsun;
+    background: url("/img/bj.jpg");
+}
+[role="navigation"]{
+    height: 50px;
+    width: 100%;
+    z-index: 100;
+    background: rgba(1, 15, 23, 0.58);
+    border:0;
+}
 ul.nav-tabs{
     width: 140px;
     margin-top: 20px;
@@ -31,6 +42,75 @@ ul.nav-tabs li:last-child a{
 }
 ul.nav-tabs.affix{
     top: 50px; /* Set the top position of pinned element */
+}
+#navbar-collapse>.navbar-nav>li>a{
+    color: #fff;
+}
+#myNav{
+    position: fixed;
+    top: 50px;
+}
+#myNav li{
+    border: 0;
+}
+#myNav .active>a{
+    background-color: #e06060;
+    border-color: #e06060;
+}
+#myNav a:hover,#myNav li:hover{
+    background-color: #e06060;
+    border-color: #e06060;
+}
+#myNav a{
+    color: #fff;
+}
+.column_bar{
+    height: 36px;
+}
+.column_title{
+    height: 36px;
+    width: 160px;
+    float: left;
+    background: url(/img/title.png);
+    font-weight: 400;
+    color: #FFF;
+    text-indent: 45px;
+}
+.main_column{
+    border-top: 6px solid #111;
+    background-color: rgba(73, 91, 103, 0.37);  
+}
+ul.nav-tabs{
+    border: none;
+}
+.web_list{
+    padding: 15px 25px 45px 30px;
+    width: 100%;
+    height: auto;
+}
+.web_list>a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 148px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border: 1px solid rgb(146, 144, 121);
+    float: left;
+    margin: 0 5px 5px 0;
+    font:Tahoma,'Microsoft Yahei',Simsun;
+    font-weight: 400;
+    color: #eff2f9;
+    background: no-repeat 10px center;
+    background-size: 16px 16px;
+    text-decoration: none;
+}
+.web_list a img{
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin: 7px 10px 10px 10px;
+    overflow: hidden;
 }
 /* 响应式 */
 @media only screen and (max-width: 615px) {

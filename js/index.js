@@ -1,7 +1,7 @@
 $(function(){
     $("#myNav").affix({
-        offset:{
-            top:125 
-        }
+        offset: {
+            top: "50px"
+            }
     });
 });
