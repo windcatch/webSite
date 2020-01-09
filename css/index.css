@@ -9,6 +9,7 @@ body{
     z-index: 100;
     background: rgba(1, 15, 23, 0.58);
     border:0;
+    position: fixed;
 }
 ul.nav-tabs{
     width: 140px;
@@ -112,9 +113,32 @@ ul.nav-tabs{
     margin: 7px 10px 10px 10px;
     overflow: hidden;
 }
+.bottom{
+    height: 120px;
+    border-top: 6px solid #111;
+    background-color: rgba(247, 247, 247, 0);
+    text-align: center;
+}
+.bm{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+}
 /* 响应式 */
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 1024px) {
     #myScrollspy{
         display: none;
+    }
+    .col-xs-10{
+        width: 100%;
+    }
+    .navbar-default .navbar-collapse{
+        border: none;
+    }
+    #navbar-collapse{
+        background-color: rgb(20, 20, 20);
     }
 }
